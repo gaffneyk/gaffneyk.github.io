@@ -47,7 +47,7 @@ h6 {
 }
 
 .section {
-    padding: 32px 0;
+    padding: 56px 0;
     border-bottom: 1px solid #243555;
 }
 
@@ -70,17 +70,20 @@ h6 {
 
 #left {
     height: 100%;
-    width: 30%;
+    width: 24%;
     position: fixed;
+    padding: 0 3%;
     background-color: #243555;
     z-index: 1;
+    box-shadow: 0 0 10px #545454;
 }
 
 #right {
     height: 100%;
-    width: 70%;
+    width: 50%;
     position: absolute;
     left: 30%;
+    padding: 20px 10%;
 }
 
 #portrait-container {
@@ -108,7 +111,7 @@ h6 {
     font-weight: 300;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
     .mobile-display-none {
         display: none;
     }
@@ -119,11 +122,13 @@ h6 {
 
     #left {
         height: 90px;
+        padding: 0;
     }
 
     #right {
         left: 0;
         top: 110px;
+        padding: 0;
     }
 
     #portrait-container {
