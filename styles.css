@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20pt;
+    margin: 0;
+}
+
+a {
+    color: #ff7865;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ab5648;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h3 {
+    margin: 0 0 24px 0;
+    font-size: 20pt;
+    color: #243555;
+}
+
+h5 {
+    font-size: 14pt;
+    margin: 0;
+}
+
+h6 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.padded {
+    padding: 24px;
+}
+
+.section-nav {
+    height: 25px;
+    font-size: 14pt;
+}
+
+.section {
+    padding-bottom: 48px;
+}
+
+.section:last-child {
+    padding-bottom: 0;
+}
+
+.subsection {
+    padding-bottom: 24px;
+}
+
+.subsection:last-child {
+    padding-bottom: 0;
+}
+
+#left {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    background-color: #243555;
+    z-index: 1;
+}
+
+#right {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    left: 30%;
+}
+
+#portrait-container {
+    max-width: 180px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+#portrait {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #181f34;
+}
+
+#name {
+    margin-bottom: 0;
+    color: white;
+}
+
+#brief {
+    color: white;
+    opacity: 0.5;
+    margin: 15px 0;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-display-none {
+        display: none;
+    }
+
+    #left, #right {
+        width: 100%;
+    }
+
+    #left {
+        height: 130px;
+    }
+
+    #right {
+        left: 0;
+        top: 130px;
+    }
+
+    #portrait-container {
+        width: 80px;
+        float: left;
+        padding: 0;
+    }
+
+    #name {
+        margin-left: 100px;
+        margin-top: 24px;
+    }
+}
